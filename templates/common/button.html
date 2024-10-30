@@ -1,0 +1,12 @@
+{{define "button"}}
+<button
+    type="{{.Type}}"
+    class="{{.Class}}"
+    id="{{.ID}}"
+>
+  {{if .Icon}}
+  <img src="{{.Icon}}" width="{{.IconWidth}}" alt="{{.Alt}}" style="pointer-events: none" />
+  {{end}}
+  {{.Text}}
+</button>
+{{end}}
